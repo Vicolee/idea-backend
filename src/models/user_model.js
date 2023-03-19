@@ -6,7 +6,7 @@ const UserSchema = new Schema({
   lastName: { type: String },
   email: { type: String, unique: true, lowercase: true },
   password: { type: String },
-  profileUrl: { type: String },
+  postIds: [String],
 }, {
   toObject: { virtuals: true },
   toJSON: {
